@@ -1,0 +1,53 @@
+pre{
+    background: #001628;
+    hyphens: none;
+    position: relative;
+    line-height: 28px;
+    border-radius: 8px;
+    min-width: 100px;
+    max-width: 100%;
+    overflow: hidden;
+    color: burlywood;
+}
+pre code {
+    font-size: 16px;
+    line-height: 1.75;
+    background: 0 0;
+    padding: 2rem;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+    display: block;
+    overflow-x: scroll;
+    max-width: 100%;
+    min-width: 100px;
+    tab-size: 2;
+    hyphens: none;
+}
+pre[rel]::before {
+    font-family: Rubik,Lato,"Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;
+    font-weight: 700;
+    font-size: 12px;
+    content: attr(rel);
+    color: #03a9f4;
+    position: absolute;
+    top: .33rem;
+    left: .52rem;
+    width: 100%;
+    padding: 0;
+}
+.copy-text{
+    display: inline-block;
+    right: 15px;
+    position: absolute;
+    top: 5px;
+}
+textarea{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;  
+}
