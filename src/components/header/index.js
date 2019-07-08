@@ -1,37 +1,3 @@
-// import React from 'react'
-// const header_main ={
-//     background: '#1976d2',
-//     padding: '1rem',
-//     fontSize: '20px',
-//     fontFamily: 'fantasy',
-//     color:'white',
-//     position: 'sticky',
-//     fontWeight: '700',
-//     borderBottom: '5px solid #f5f5f5'
-// } 
-// const logo_block ={
-//     width: 'fit-content',
-//     textAlign: 'center'
-// } 
-// const logo_text ={
-//     fontSize: '2rem',
-//     height: '34px'
-// } 
-// const logo_subtext ={
-//     fontSize: '16px'
-// } 
-
-
-// const Header = ()=><>
-// <header style={header_main}>
-//     <div style={logo_block}>
-//         <div style={logo_text}>Cadet Who Code</div>
-//         <div style={logo_subtext}>Believe you can and you're halfway there.</div>
-//     </div>
-// </header>
-
-// </>
-// export default Header
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -47,7 +13,7 @@ const useStyles = makeStyles({
   },
   toolbar:{
     flexDirection: 'column',
-    fontFamily: 'fantasy'
+    fontFamily: 'cursive'
   }
 });
 

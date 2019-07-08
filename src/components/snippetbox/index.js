@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Prism from "prismjs";
+
 import './style.css'
-const Snippetbox = ({data, rel})=>{
+const Snippetbox = ({data, rel, family})=>{
+    useEffect(() => {
+        Prism.highlightAll();
+      },[]);
     const copyHandler=(event)=>{
         debugger;
         const copyText = event.target.nextSibling.textContent
@@ -13,7 +18,7 @@ const Snippetbox = ({data, rel})=>{
     return (
     <pre rel={rel}>
         <span className="copy-text" onClick={copyHandler}>Copy</span>
-        <code id="myInput">
+        <code className={family}>
             {data}
         </code>
     </pre>

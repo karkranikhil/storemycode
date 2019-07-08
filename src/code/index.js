@@ -45,6 +45,9 @@ export const javascript =[
         Below is the main logic to Sort an array of objects by multiple fields. You can pass the number of fields in array you want to sort.
         By default it's in accending order, Prepend minus to specify descending order.
         `,
-        rel:'logic'
+        rel:'logic',
+        body_code_family:'language-javascript',
+        input_code_family:'language-javascript',
+        output_code_family:'language-javascript',
 
     }]
